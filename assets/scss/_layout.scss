@@ -1,0 +1,303 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main, .main,
+header, .header,
+footer, .footer {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+header, .header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+main, .main {
+	flex: 1;
+}
+
+header, .header, footer, .footer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.logo {
+	flex-grow: 0;
+	font-size: 15px;
+	line-height: 1.3;
+	font-weight: 500;
+	margin: 0;
+}
+
+.logo-photo {
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+}
+
+.logo a {
+	display: flex;
+	align-items: stretch;
+}
+
+.logo-name {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	margin-left: 8px;
+}
+
+.logo-desc {
+	@extend .thin-text;
+}
+
+.nav {
+	a {
+		@extend .logo-desc;
+	}
+}
+
+.intro {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	@media (min-width: $breakpoint-medium) {
+		p {
+			max-width: 66.66666%;
+		}
+	}
+}
+
+.lead {
+	font-size: 2rem;
+}
+
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -1rem;
+
+	li {
+		flex-basis: 33%;
+		padding-right: 1rem;
+	}
+
+	a {
+		display: flex;
+		flex-direction: column;
+		justify-content: stretch;
+		height: 100%;
+
+		&:hover {
+			.img-wrapper {
+				&:before {
+					opacity: 1;
+				}
+				&:after {
+					opacity: .45;
+				}
+			}
+		}
+	}
+
+	.img-wrapper {
+		position: relative;
+
+		&:before {
+			content: "View Project";
+			color: $color-white;
+			@extend .h2;
+			font-weight: 800;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -.5rem;
+			margin-left: -4.4rem;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+    		-webkit-transition-delay: .25s;
+    		transition-delay: .25s;
+    		z-index: 2;
+		}
+
+		&:after {
+			background: #000;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+    		z-index: 1;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	span {
+		margin: 1rem 0 .5rem;
+	}
+}
+
+.project {
+	display: flex;
+	flex-wrap: wrap;
+	article {
+		flex-shrink: 1;
+		flex-basis: 500px;
+		flex-grow: 0;
+	}
+	aside {
+		flex-basis: 50%;
+		flex-grow: 1;
+	}
+	.h2 {
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+	h1 {
+		a {
+			text-decoration: underline;
+		}
+	}
+	li {
+		margin-bottom: 0rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.project-navigation {
+	background: $color-black;
+	padding: 5rem 0;
+
+	a {
+		color: $color-white;
+		display: inline-block;
+
+		&:hover {
+			h2:after {
+				visibility: visible;
+				-webkit-transform: scaleX(1);
+				transform: scaleX(1);
+			}
+
+			&.prev {
+				span {
+					left: 7px;
+				}
+			}
+
+			span {
+				&:after {
+					left: 7px;
+				}
+
+				&:before {
+					left: -7px;
+				}
+			}
+		}
+
+		&:nth-of-type(1),
+		&:nth-of-type(2) {
+			display: table;
+			margin: 0 auto;
+			text-align: center;
+
+			@media (min-width: $breakpoint-xsmall) {
+				display: inline-block;
+				margin: 0;
+				text-align: left;
+			}
+		}
+
+		&:nth-of-type(1) {
+			@media (min-width: $breakpoint-xsmall) {
+				float: left;
+			}
+		}
+
+		&:nth-of-type(2) {
+			margin-top: 3rem;
+
+			@media (min-width: $breakpoint-xsmall) {
+				float: right;
+				margin-top: 0;
+			}
+		}
+
+		&.next {
+			span {
+				&:after {
+					content: "\02192";
+				}
+			}
+		}
+
+		&.prev {
+			span {
+				position: relative;
+				left: 0;
+				-webkit-transition: all .3s ease-in-out 0s;
+				transition: all .3s ease-in-out 0s;
+
+				&:before {
+					content: "\02190";
+				}
+			}
+		}
+	}
+
+	span {
+		&:after,
+		&:before {
+			position: relative;
+			left: 0;
+			-webkit-transition: all .3s ease-in-out 0s;
+			transition: all .3s ease-in-out 0s;
+		}
+	}
+
+	h2 {
+		display: inline-block;
+		font-size: 1.8rem;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: -4px;
+			left: 0;
+			background-color: $color-white;
+			visibility: hidden;
+			-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transition: all .3s ease-in-out 0s;
+			transition: all .3s ease-in-out 0s;
+		}
+	}
+}
+
+.footer {
+	background: $color-alabaster;
+}
