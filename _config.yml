@@ -1,9 +1,9 @@
 # User config
 author: "Ksenia Bataeva"
 tagline: "kclo"
-whoami: "Frontend Developer"
-tesis: Удобный интерфейс, красивая упаковка, работоспособная системаs
-description: "Умею делать интерактивные страницы с графиками и картами"
+whoami: "Data enthusiast"
+tesis: "Data Analyst with software engineering background"
+description: ""
 keywords: "kclo"
 email: "kclosu@gmail.com"
 # linkedin: "https://www.linkedin.com/"
@@ -12,6 +12,7 @@ github: "https://github.com/kclosu"
 telegram: "https://t.me/kclosu"
 
 # Site config
+url: "https://kclosu.github.io"
 baseurl: ""
 highlighter: rouge
 sass:
