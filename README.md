@@ -1,6 +1,6 @@
 # Ksenia Bataeva
 
-__Data Analyst__
+__Data Analyst__  
 DataScience, Python, Spark, SQL, GIS, NodeJS, Vue, React
 
 ___
@@ -30,6 +30,6 @@ Senior Software Engineer
 
 #### General research center of the Administrative Directorate of the President of the Russian Federation 
 
-Frontend Architect, Software Engineer
+Frontend Architect, Senior Software Engineer, Team Lead
 
 <span style="color:gray">2009 — 2019</span>
