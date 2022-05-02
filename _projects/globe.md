@@ -6,14 +6,14 @@ meta:
   keywords: "Cesium, GIS, WebGL"
 
 project:
-  title: "Глобус"
+  title: "Globe"
   type: "GIS"
   url: "http://kclo.su/globe"
   logo: "/assets/images/projects/globe/logo.png"
   tech: "HTML, CSS, JavaScript, WebGL, GIS"
 
 agency:
-  title: ФГУП "ГлавНИВЦ"
+  title: General Research Computer Center
   url: "http://grcc.ru"
   year: "2015"
 
@@ -29,4 +29,4 @@ images:
     alt: "3D city"
 ---
 
-<p class="lead">Основная идея проекта заключается в сборе и отображении различных слоёв на одной карте</p>
+<p class="lead">This GIS can show many different kinds of data on one map, such as streets, buildings, and vegetation</p>
