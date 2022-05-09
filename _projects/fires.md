@@ -19,7 +19,7 @@ agency:
 
 images:
   - image:
-    url: "/assets/images/projects/thermopoints/logo.png"
+    url: "/assets/images/projects/thermopoints/mobilnoe-prilozhenie-termicheskie-tochki-mchs-rossii_1617517182160209437.jpeg"
     alt: "Near-Realtime map of natuarl fires from satellite"
 ---
 
