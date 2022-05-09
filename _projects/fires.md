@@ -9,7 +9,7 @@ project:
   title: "Thermopoints"
   type: "GIS"
   url: "https://ai-russia.ru/library/mchs"
-  logo: "/assets/images/projects/globe/logo.png"
+  logo: "/assets/images/projects/thermopoints/logo.png"
   tech: ""
 
 agency:
