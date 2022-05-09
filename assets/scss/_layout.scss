@@ -84,11 +84,11 @@ section {
 .projects-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: -1rem;
 
 	li {
 		flex-basis: 33%;
-		padding-right: 1rem;
+		column-gap: 1rem;
+    		row-gap: .7rem;
 	}
 
 	a {
