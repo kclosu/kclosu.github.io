@@ -3,7 +3,7 @@ layout: project
 category: projects
 
 meta:
-  keywords: "GIS, Flood, DataScience"
+  keywords: "GIS, Fires, DataScience"
 
 project:
   title: "Thermopoints"
