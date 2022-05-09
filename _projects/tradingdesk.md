@@ -3,12 +3,12 @@ layout: project
 category: projects
 
 meta:
-  keywords: "Cesium, GIS, WebGL"
+  keywords: "design, frontend"
 
 project:
   title: "TradingDesk"
   type: "design"
-  url: "http://kclo.su/globe"
+  url: "https://td.nsc.media"
   logo: "/assets/images/projects/td/logo.png"
   tech: "HTML, CSS, JavaScript, Django, Python, Design"
 
@@ -34,4 +34,4 @@ images:
     url: "/assets/images/projects/td/orders.png"
     alt: "Orders tiles"
 ---
-<p class="lead">Дизайн и вёрстка для рекламной системы</p>
+<p class="lead">Design and frontend for Media buying platform</p>
